@@ -13,10 +13,10 @@ sudo systemctl stop dmrgateway
 sudo rm /opt/dmr/MMDVMHost/DMRIds.dat
 
 #Download DMRids.dat 
-wget http://ham-digital.org/status/DMRIds.dat -P /opt/dmr/MMDVMHost/
+sudo wget http://ham-digital.org/status/DMRIds.dat -P /opt/dmr/MMDVMHost/
 
 # LÃ¶schen stripped.csv
-sudo rm /opt/dmr/MMDVMHost/Nextion/stripped.csv
+sudo rm /opt/dmr/NextionDriver/stripped.csv
 
 #Download DMRids.dat 
 sudo wget http://files.ham-dmr.be/UserDB/stripped.csv -P /opt/dmr/NextionDriver/
