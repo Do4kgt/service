@@ -19,7 +19,7 @@ wget https://ham-digital.org/status/DMRIds.dat -P /opt/dmr/MMDVMHost/
 sudo rm /opt/dmr/MMDVMHost/Nextion/stripped.csv
 
 #Download DMRids.dat 
-sudo wget http://files.ham-dmr.be/UserDB/stripped.csv -P /opt/dmr/MMDVMHost/Nextion/
+sudo wget http://files.ham-dmr.be/UserDB/stripped.csv -P /opt/dmr/NextionDriver/
 
 # Start MMDVMHost Service 
 sudo systemctl start mmdvmhost
