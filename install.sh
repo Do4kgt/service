@@ -4,8 +4,8 @@
 cd /
 sudo apt-get install screen
 cd opt
-sudo mkdir dmr1
-cd dmr1
+sudo mkdir dmr
+cd dmr
 sudo git clone https://github.com/Do4kgt/MMDVMHost.git
 sudo git clone https://github.com/Do4kgt/DMRGateway.git
 sudo mkdir log
@@ -39,6 +39,8 @@ sudo cp -r /opt/dmr1/tmp/html/ /var/www/html
 cd ..
 sudo git clone https://github.com/Do4kgt/Service_data.git
 cd Service_data
+
+sudo cp MMDVM.ini /opt/dmr1/ini/MMDVM.ini
 echo 'Kopieren und aktivieren der Servicedaten'
 
 sudo cp dmrgateway.service /etc/systemd/system/dmrgateway.service
@@ -55,6 +57,8 @@ sudo systemctl enable nextion.service
 
 
 cd ..
+sudo git clone https://github.com/Do4kgt/service.git
 sudo chmod 777 -R /opt/
+sudo service/update.sh
 sudo rm -r Service_data
 sudo rm -r tmp
