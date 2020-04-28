@@ -1,6 +1,8 @@
 #!/bin/sh
 # DO4KGT Install MMDVMHost
 
+sudo apt-get update
+
 cd /
 sudo apt-get install screen
 cd opt
