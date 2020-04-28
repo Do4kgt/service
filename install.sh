@@ -42,7 +42,7 @@ cd ..
 sudo git clone https://github.com/Do4kgt/Service_data.git
 cd Service_data
 
-sudo cp MMDVM.ini /opt/dmr1/ini/MMDVM.ini
+sudo cp MMDVM.ini /opt/dmr/ini/MMDVM.ini
 echo 'Kopieren und aktivieren der Servicedaten'
 
 sudo cp dmrgateway.service /etc/systemd/system/dmrgateway.service
