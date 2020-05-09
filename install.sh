@@ -37,7 +37,7 @@ cd tmp
 sudo git clone https://github.com/Do4kgt/html.git
 sudo chmod -R 777 /var/www/html
 sudo rm /var/www/html/*
-sudo cp -r /opt/dmr/tmp/html/ /var/www/html
+sudo cp -r /opt/dmr/tmp/html/ /var/www
 cd ..
 sudo git clone https://github.com/Do4kgt/Service_data.git
 cd Service_data
